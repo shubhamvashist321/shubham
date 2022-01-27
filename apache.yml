@@ -9,7 +9,7 @@
   - name: copying the index.html
     copy: 
       src: index.html
-      dests: /var/www/html/
+      dest: /var/www/html/
   - name: Starting Apache
     service:
       name: httpd
