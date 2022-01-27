@@ -7,7 +7,7 @@ tasks:
      name: httpd
      state: present
 - name: copying the index.html
-  copy: 
+   copy: 
     src: index.html
     dests: /var/www/html/
 - name: Starting Apache
