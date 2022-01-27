@@ -1,16 +1,16 @@
 ---
 - hosts: all
-become: yes
-tasks:
-- name: Installing Apache
-  yum:
-     name: httpd
-     state: present
-- name: copying the index.html
-  copy: 
-     src: index.html
-     dests: /var/www/html/
-- name: Starting Apache
-  service:
-     name: httpd
-     state: started
+  become: yes
+  tasks:
+  - name: Installing Apache
+    yum:
+      name: httpd
+      state: present
+  - name: copying the index.html
+    copy: 
+      src: index.html
+      dests: /var/www/html/
+  - name: Starting Apache
+    service:
+      name: httpd
+      state: started
