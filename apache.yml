@@ -7,6 +7,6 @@
         name: httpd
         state: present
    - name: Starting Apache
-      service:
+     service:
         name: httpd
         state: started
