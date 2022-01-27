@@ -3,7 +3,7 @@
   become: yes
   tasks:
    - name: Installing Apache
-      yum:
+     yum:
         name: httpd
         state: present
    - name: Starting Apache
